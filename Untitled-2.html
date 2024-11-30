@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 30" width="150" height="30">
+    <!-- Star shape definition -->
+    <defs>
+        <symbol id="star" viewBox="0 0 24 24">
+            <polygon points="12,1 15,9 24,9 17,14 20,23 12,18 4,23 7,14 0,9 9,9" />
+        </symbol>
+    </defs>
+
+    <!-- Background stars -->
+    <use href="#star" x="0" y="0" width="24" height="24" fill="#ccc" />
+    <use href="#star" x="30" y="0" width="24" height="24" fill="#ccc" />
+    <use href="#star" x="60" y="0" width="24" height="24" fill="#ccc" />
+    <use href="#star" x="90" y="0" width="24" height="24" fill="#ccc" />
+    <use href="#star" x="120" y="0" width="24" height="24" fill="#ccc" />
+
+    <!-- Filled stars -->
+    <use href="#star" x="0" y="0" width="24" height="24" fill="gold" />
+    <use href="#star" x="30" y="0" width="24" height="24" fill="gold" />
+    <use href="#star" x="60" y="0" width="24" height="24" fill="gold" />
+
+    <!-- Partially filled star (70%) -->
+    <clipPath id="partial-fill">
+        <rect x="0" y="0" width="16.8" height="24" />
+    </clipPath>
+    <use href="#star" x="90" y="0" width="24" height="24" fill="gold" clip-path="url(#partial-fill)" />
+</svg>
